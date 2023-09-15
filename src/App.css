@@ -1,38 +1,252 @@
-.App {
+header{
+  margin:0;
+  margin-bottom: 2rem;
+  padding: 0rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Caladea', serif;
+  /*background: linear-gradient(90deg, rgba(157,214,238,1) 29%, rgba(134,134,232,0.5551470588235294) 55%, rgba(67,186,210,1) 100%);
+  background: rgb(157,214,238);*/
+  background-color: #000814;
+  color: #FFC300;
+  color: #306844;
+  color: #3BD16F;
+  border-bottom: 2px solid #3BD16F;
+}
+
+header h2{
+  margin: 0;
+  padding: 1rem;
+  margin: 0rem 1rem;
+  font-size: 2rem;
+  text-decoration: 2px solid black;
+  color: #FFC300;
+  background-color: #000814;
+  color:#3BD16F;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid rgba(59, 209, 111, 1);
+  border-radius: 0.5rem;
+}
+
+header p{
+  margin: 0;
+  padding: 1rem;
+  text-align: right;
+}
+
+.movie-card{
+  margin:0;
+  padding: 2rem;
+    margin: 1rem;
+    padding: 0;
+  padding-bottom: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: min-content;
+  height: fit-content;
+  min-width: 30vh;
+  font-family: 'Caladea', serif;
+  background-color: #000814;
+  color: #000814;
+  height: 100%;
+  /*border: 5px solid #3BD16F;*/
+  box-shadow: 2px 2px 25px 0px rgba(59, 209, 111, 0.8);
+  margin-bottom: 2rem;
+  align-self: stretch;
+}
+
+.text-area{
+  border-radius: 1rem 1rem 1rem 1rem;
+  /*background: rgb(175,43,165);
+background: linear-gradient(90deg, rgba(175,43,165,1) 0%, rgba(221,176,222,1) 100%, rgba(173,91,191,1) 100%, rgba(223,189,151,0.5551470588235294) 100%);*/
+  /*background-color: #C8DBBE;
+  background-color: #FFC300;
+  background-color: #3BD16F;
+  background-color: rgba(59, 209, 111, 1);*/
+  font-size: 1rem;
+  width: 80%;
+  padding: 0.1rem 10%;
+  border-top: 1px solid #3BD16F;
+  color: #3BD16F;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area p{
+  margin: 0;
+  padding: 0;
+}
+
+.text-area h2{
+  text-decoration: underline solid  rgba(59, 209, 111, 1) 2px;
+}
+
+.genre-button{
+    margin: 0;
+    padding: 0.2rem 1rem;
+    margin-right: 0.1rem;
+    background-color:rgba(59, 209, 111, 1);
+    color: #000814;
+    border-radius: 0.2rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.genre-button:hover{
+  color:rgba(59, 209, 111, 1);
+  background-color:  #050100;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 0px rgba(59, 209, 111, 0.8);
+}
+
+.card-button{
+  margin: 0;
+  padding: 0.2rem 1rem;
+  margin-right: 0.1rem;
+  background-color:rgba(59, 209, 111, 1);
+  background-color: #000814;
+  border-radius: 0.2rem;
+  width: fit-content;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-button:hover{
+background-color:rgba(59, 209, 111, 1);
+box-shadow: 2px 2px 15px 0px rgba(59, 209, 111, 0.8);
+color:  #050100;
+cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-card img{
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 80%;
+  max-height: 25vh;
+  max-width: 30vh;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.genre{
+  padding: 0;
+  padding-left: 1rem;
+  margin: 3rem 0;
+  color: #000814;
+}
+
+.genrehead h2{
+  margin: 0rem 1rem;
+  font-size: 2rem;
+  text-decoration: 2px solid black;
+  color: #FFC300;
+  background-color: #000814;
+  color:#3BD16F;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid rgba(59, 209, 111, 1);
+  border-radius: 0.5rem;
+  font-weight: lighter;
+}
+
+.genre-cards{
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+  align-items: stretch;
+}
+
+.genrehead{
+  display: flex;
+  font-family: 'Caladea', serif;
   align-items: center;
+}
+
+.genrehead input{
+  margin-right: 1rem;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: #000814;
+  color: rgba(59, 209, 111, 1);
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  font-family: 'Caladea', serif;
+  border: 1px solid #3BD16F;
+}
+
+a{
+  text-decoration: none;
+}
+
+.Login{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: 'Caladea', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.Login input{
+  padding: 1rem;
+  background-color: black;
+  color: #FFC300;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Caladea', serif;
+  margin: 2rem 0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Login button{
+  padding: 1rem;
+  
+  color: black;
+  background-color: #FFC300;
+  border: 0;
+  border-radius: 0.5rem;
+  width: fit-content;
+  font-family: 'Caladea', serif;
+  font-size: 1.5rem;
+}
+
+.Login button:hover{
+  background-color: black;
+  color: #FFC300;
+  cursor: pointer;
+}
+ 
+.Login h1{
+  font-size: 2.5rem;
+}
+
+
+@media screen
+  and (max-device-width: 1000px){ 
+    .genre-cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .movie-card{
+      width: fit-content;
+      margin: 1rem auto;
+    }
+    .genrehead div{
+      flex-direction: column;
+      align-items: center;
+    }
+    .genrehead{
+      display: flex;
+      flex-direction: column;
+    }
+    .genrehead input{
+      margin: 0.25rem auto;
+    }
+    .genrehead h3{
+      margin: 0.25rem auto;
+    }
 }
